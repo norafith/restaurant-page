@@ -1,0 +1,183 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 18px;
+    background-color: #634832;
+    color: #ece0d1;
+    margin: 0;
+}
+
+.body-home {
+    background-image: url('https://wallpaperaccess.com/full/373974.jpg');
+    background-repeat: no-repeat;
+    background-position: top 70px center;
+}
+
+nav {
+    padding: 10px 0;
+    position: relative;
+    background-color: #38220f;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+#nav-list {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding-left: 0;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav-list:first-child {
+    border: none;
+}
+
+#nav-list li {
+    padding: 8px;
+    display: inline-block;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+#nav-list li:hover {
+    background-color: #2b1a0b;
+}
+
+.active-nav-section {
+    background-color: #2b1a0b;
+    font-weight: 600;
+    border-bottom: 1px solid #ece0d1;
+}
+
+#nav-title {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+#content {
+    margin: 5px;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: auto;
+    padding: 25px;
+    background-color: rgba(56, 34, 15, 0.7);
+    border-radius: 25px;
+}
+
+.home-info-secondary-container span {
+    display: block;
+    margin: 20px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.menu-section-list {
+    padding: 0;
+}
+
+.menu-section-list li {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border: 1px solid #ece0d1;
+    border-radius: 25px;
+    margin: 15px;
+}
+
+.menu-section-list li:hover > .menu-item-description {
+    display: block;
+    background-color: rgba(56, 34, 15, 0.5);
+    color: #ece0d1;
+}
+
+.menu-item-picture {
+    border-radius: inherit;
+    width: inherit;
+    height: inherit;
+}
+
+.menu-item-description {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: 0.2s;
+    background-color: transparent;
+    color: transparent;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.menu-item-description span {
+    display: block;
+    margin: 5px;
+    font-weight: 600;
+}
+
+#team-members-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.team-member {
+    display: inline-flex;
+    margin: 15px;
+    border: 1px solid #ece0d1;
+    border-radius: 25px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.team-member-picture {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    width: 300px;
+    height: 300px;
+    border-bottom: 1px solid #ece0d1;
+}
+
+.team-member span {
+    margin-top: 10px;   
+}
+
+.team-position-text {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    #home-info-container {
+        width: fit-content;
+    }
+
+    .menu-section-list li {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .menu-section-list li {
+        height: 200px;
+        width: 200px;
+    }
+}
