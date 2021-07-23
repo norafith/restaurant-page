@@ -71,7 +71,7 @@ nav {
 .info-container {
     display: flex;
     justify-content: space-between;
-    width: 500px;
+    width: fit-content;
     margin: auto;
     padding: 25px;
     background-color: rgba(56, 34, 15, 0.7);
@@ -80,7 +80,7 @@ nav {
 
 .home-info-secondary-container span {
     display: block;
-    margin: 20px;
+    margin: 20px 0;
     font-size: 1.1em;
     font-weight: 600;
 }
